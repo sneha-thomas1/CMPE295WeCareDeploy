@@ -4,8 +4,3 @@ instance_class: F2
 
 env_variables:
   BUCKET_NAME: "example-gcs-bucket"
- 
-steps:
-  name: 'gcr.io/cloud-builders/yarn:node-16.14.2'
-  args: ['install', '--ignore-engines']
-  dir: 'functions/autodeploy'
