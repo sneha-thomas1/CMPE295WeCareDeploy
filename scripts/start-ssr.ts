@@ -77,6 +77,7 @@ const start = async () => {
     app.listen(WEBPACK_PORT);
 
     serverCompiler.watch(watchOptions, (error, stats) => {
+        return;
         if (!error && !stats.hasErrors()) {
             console.log(stats.toString(serverConfig.stats));
             return;
